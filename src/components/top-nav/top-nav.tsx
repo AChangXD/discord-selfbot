@@ -16,22 +16,7 @@ import getDataFromApi from '@/lib/util/rsc-data-fetch';
 import { Tenant } from '@/app/api/tenant/types';
 import { headers } from 'next/headers';
 
-const HOMEPAGE_NAVIGATION_MENU_ITEMS: NavigationMenuItemDef[] = [
-  {
-    groupName: 'Products',
-    permissions: [],
-    tenantPermissions: [],
-    items: [
-      {
-        title: 'Genmega Kiosk API',
-        description: 'API to dispense cash from Genmega machines.',
-        href: '/genmega-kiosk-api',
-        permissions: [],
-        tenantPermissions: [],
-      },
-    ],
-  },
-];
+const HOMEPAGE_NAVIGATION_MENU_ITEMS: NavigationMenuItemDef[] = [];
 
 const AUTHORIZED_NAVIGATION_MENU_ITEMS: NavigationMenuItemDef[] = [
   {

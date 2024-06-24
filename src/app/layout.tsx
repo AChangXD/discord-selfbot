@@ -10,8 +10,8 @@ import TenantContextProvider from './tenant-provider';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'ATM Cash Dispenser API',
-  description: 'Cash dispensing API for ATM machines.',
+  title: 'Discord Self Bot',
+  description: 'Using OAuth2 to login to Discord & perform API calls',
 };
 
 export default function RootLayout({
