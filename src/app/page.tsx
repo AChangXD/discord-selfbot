@@ -18,7 +18,7 @@ if (!APPLICATION_ID) {
   process.exit(1);
 }
 
-const AUTHORIZE_URL = 'https://discord.com/oauth2/authorize';
+const AUTHORIZE_URL = 'https://discord.com/api/v10/oauth2/authorize';
 
 export default async function Home() {
   console.log('APPLICATION_ID', APPLICATION_ID);
@@ -37,7 +37,7 @@ export default async function Home() {
         <Link
           href={
             AUTHORIZE_URL +
-            `?client_id=${CLIENT_ID}&response_type=code&redirect_uri=http://localhost:3000/api/discord&scope=messages.read`
+            `?client_id=${CLIENT_ID}&response_type=code&redirect_uri=http://localhost:3000/api/discord&scope=bot&permissions=8`
           }
           target="_blank"
           rel="noopener noreferrer"
